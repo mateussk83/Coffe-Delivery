@@ -3,9 +3,8 @@ module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
     fontFamily: {
-      sans: 'DM Sans, sans-serif',
-      roboto: 'Roboto',
-      baloo: 'Baloo 2'
+      'roboto' : ['Roboto','sans-serif'],
+      'baloo' : ['Baloo 2']
     },
     fontSize: {
       '5xl': '3.4rem'
@@ -19,7 +18,7 @@ module.exports = {
       blue: {
         300: '#EBE5F9',
         500: '#8047F8',
-        700: '#EBE5F9',
+        700: '#4B2995',
       },
       gray: {
         100: '#FAFAFA',
