@@ -1,8 +1,6 @@
 
 export function DefaultLayout() {
  return (
-  <div>
-   
-  </div>
+  <h1>layout</h1>
  )
 }
