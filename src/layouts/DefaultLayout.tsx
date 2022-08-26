@@ -1,6 +1,7 @@
+import { Header } from "../components/Header";
 
 export function DefaultLayout() {
  return (
-  <h1>layout</h1>
+  <Header/>
  )
 }
