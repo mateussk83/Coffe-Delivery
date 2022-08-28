@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply text-gray-100 scroll-smooth p-0 m-0;
-
+  @apply scroll-smooth p-0 m-0;
   -webkit-font-smothing: antialiased;
 }

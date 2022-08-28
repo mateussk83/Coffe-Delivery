@@ -3,11 +3,14 @@ module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
     fontFamily: {
-      'roboto' : ['Roboto','sans-serif'],
-      'baloo' : ['Baloo 2']
+      roboto : ['Roboto','sans-serif'],
+      baloo : ['Baloo+2'] 
     },
     fontSize: {
-      '5xl': '3.4rem'
+      'base' : '16px',
+      'lg' : '20px',
+      '5xl': '48px',
+
     },
     colors: {
      yellow: {
