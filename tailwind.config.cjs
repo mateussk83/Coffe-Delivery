@@ -10,7 +10,7 @@ module.exports = {
       'base' : '16px',
       'lg' : '20px',
       '5xl': '48px',
-
+      '3xl' : '32px'
     },
     colors: {
      yellow: {
