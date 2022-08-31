@@ -1,14 +1,16 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import { Card } from "../components/Card";
 
+import homeCoffe from "../assets/homeCoffe.png"
+
 export function Home() {
  return (
-<div>
-  <div className="flex justify-start items-center pt-[5.875rem] gap-14 mb-[6.75rem]">
+<div className=" px-[8rem]">
+  <div className="flex justify-start items-center pt-[5.875rem] gap-14 mb-[6.75rem] px-6">
   <div>
    <div className="w-[588px] flex flex-col gap-4">
-  <strong className="font-baloo text-5xl">Encontre o café perfeito para qualquer hora do dia</strong>  
-  <span className="flex font-roboto font-normal text-lg">Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</span>
+  <strong className="font-bold text-5xl">Encontre o café perfeito para qualquer hora do dia</strong>  
+  <span className=" flex font-normal text-lg">Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</span>
   </div>
 
 
@@ -51,7 +53,7 @@ export function Home() {
   </div>
   </div>
   <div>
-   <img src="./src/assets/coffe.png" alt="" />
+   <img src={homeCoffe} alt="" />
   </div>
   </div>
 
@@ -61,7 +63,20 @@ export function Home() {
    Nossos Cafés
    </strong>
    </div>
-  <Card/>
+   <div className="pt-12 grid grid-cols-4 gap-8 gap-y-20 content-center ">
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  <div><Card/></div>
+  </div>
   </div>
 
 

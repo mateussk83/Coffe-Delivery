@@ -3,10 +3,12 @@ module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
     fontFamily: {
-      roboto : ['Roboto','sans-serif'],
-      baloo : ['Baloo+2'] 
+      bold : ['Roboto'],
+      extrabold : ['Baloo Bhaina 2'],
+      // 'roboto' : ['Roboto','sans-serif'],
     },
     fontSize: {
+      'xs' : ['12px','13px'],
       'base' : '16px',
       'lg' : '20px',
       '5xl': '48px',

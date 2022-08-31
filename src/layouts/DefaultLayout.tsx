@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 
 export function DefaultLayout() {
  return (
-  <div className="px-[10rem]">
+  <div className="">
   <Header />
   <Outlet />
   </div>
