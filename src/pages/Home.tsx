@@ -1,8 +1,87 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import { Card } from "../components/Card";
+import cafeTradicional from "../assets/cafeTradicional.png"
 
 import homeCoffe from "../assets/homeCoffe.png"
 
+const Coffes = [{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},
+{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},
+{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},
+{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},
+{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},
+{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},{
+  title: 'Expresso Tradicional',
+  description: 'O tradicional café feito com água quente e grãos moidos',
+  price: '9,90',
+  img: {cafeTradicional}
+},
+
+]
 export function Home() {
  return (
 <div className=" px-[8rem]">
@@ -64,18 +143,11 @@ export function Home() {
    </strong>
    </div>
    <div className="pt-12 grid grid-cols-4 gap-8 gap-y-20 content-center ">
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
-  <div><Card/></div>
+  {Coffes.map(coffeNow => {
+    return (
+      <Card description={coffeNow.description} img={coffeNow.img} price={coffeNow.price} title={coffeNow.title}/>
+    )
+  })}
   </div>
   </div>
 

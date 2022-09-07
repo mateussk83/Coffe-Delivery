@@ -1,18 +1,24 @@
 import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import cafeTradicional from "../assets/cafeTradicional.png"
 
-export function Card() {
+interface CardProps {
+ description: string;
+ img: any;
+ title: string;
+ price: string;
+}
+export function Card({ description, img, title, price }:CardProps) {
  return (
   <div className="flex flex-col text-center justify-center items-center w-[256px] h-[310px] bg-gray-200 border-none rounded-tr-3xl rounded-bl-3xl">
    <img src={cafeTradicional} alt="" className="max-w-[120px] mt-[-1.5rem]"/>
    <div className="mt-3 font-bold text-xs bg-yellow-300 py-1 px-2 border-none rounded-full text-yellow-700">
    <span>TRADICIONAL</span>
    </div>
-   <strong className="pt-4">Expresso Tradicional</strong>
-   <span className="pt-2 text-gray-600">O café feito com água quente e grãos moídos</span>
+   <strong className="pt-4">{title}</strong>
+   <span className="pt-2 text-gray-600">{description}</span>
    
    <div className="flex items-center p-8">
-    <span className="text-base">R$<strong className="font-bold">9,90</strong></span>
+    <span className="text-base">R$<strong className="font-bold">{price}</strong></span>
     
     <div className="p-2 bg-blue-300 rounded-md flex justify-center items-center ml-6 mr-2">
     
