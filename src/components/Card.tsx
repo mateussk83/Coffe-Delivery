@@ -1,4 +1,5 @@
 import { Minus, Plus, ShoppingCart } from "phosphor-react";
+import { useState } from "react";
 import cafeTradicional from "../assets/cafeTradicional.png"
 
 interface CardProps {
@@ -8,6 +9,18 @@ interface CardProps {
  price: string;
 }
 export function Card({ description, img, title, price }:CardProps) {
+
+ const [countProduct, setCountProduct ] = useState(0)
+ 
+function AppendCountProduct() {
+ setCountProduct(countProduct + 1)
+}
+function RemoveCountProduct() {
+ if(countProduct > 0 ){
+  setCountProduct(countProduct - 1)
+ }
+}
+
  return (
   <div className="flex flex-col text-center justify-center items-center w-[256px] h-[310px] bg-gray-200 border-none rounded-tr-3xl rounded-bl-3xl">
    <img src={cafeTradicional} alt="" className="max-w-[120px] mt-[-1.5rem]"/>
@@ -22,9 +35,9 @@ export function Card({ description, img, title, price }:CardProps) {
     
     <div className="p-2 bg-blue-300 rounded-md flex justify-center items-center ml-6 mr-2">
     
-    <a href="" className="mr-1"><Minus size={14} color="#5f3dc4" weight="fill" /></a>
-    <span>0</span>
-    <a href="" className="ml-1 "><Plus size={14} color="#5f3dc4" weight="fill" /></a>
+    <a onClick={RemoveCountProduct} className="mr-1"><Minus size={14} color="#5f3dc4" weight="fill" /></a>
+    <span>{countProduct}</span>
+    <a onClick={AppendCountProduct} className="ml-1 "><Plus size={14} color="#5f3dc4" weight="fill" /></a>
     </div>
     
     <a href="" className="p-2 bg-blue-500 border rounded-md border-none ">
