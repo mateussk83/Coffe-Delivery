@@ -3,7 +3,7 @@ import cafeTradicional from "../assets/cafeTradicional.png"
 
 interface CardProps {
  description: string;
- img: any;
+ img: string;
  title: string;
  price: string;
 }
@@ -22,7 +22,7 @@ export function Card({ description, img, title, price }:CardProps) {
     
     <div className="p-2 bg-blue-300 rounded-md flex justify-center items-center ml-6 mr-2">
     
-    <a href="" className=" mr-1"><Minus size={14} color="#5f3dc4" weight="fill" /></a>
+    <a href="" className="mr-1"><Minus size={14} color="#5f3dc4" weight="fill" /></a>
     <span>0</span>
     <a href="" className="ml-1 "><Plus size={14} color="#5f3dc4" weight="fill" /></a>
     </div>

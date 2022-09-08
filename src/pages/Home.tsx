@@ -8,77 +8,77 @@ const Coffes = [{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },
 {
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },
 {
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },
 {
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },
 {
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },
 {
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },{
   title: 'Expresso Tradicional',
   description: 'O tradicional café feito com água quente e grãos moidos',
   price: '9,90',
-  img: {cafeTradicional}
+  img: "../assets/cafeTradicional.png"
 },
 
 ]
