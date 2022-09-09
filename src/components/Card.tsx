@@ -7,10 +7,11 @@ interface CardProps {
  img: string;
  title: string;
  price: string;
+ caracters:string[] ;
 }
-export function Card({ description, img, title, price }:CardProps) {
+export function Card({ description, img, title, price, caracters }:CardProps) {
 
- const [countProduct, setCountProduct ] = useState(0)
+const [countProduct, setCountProduct ] = useState(0)
  
 function AppendCountProduct() {
  setCountProduct(countProduct + 1)
@@ -21,11 +22,20 @@ function RemoveCountProduct() {
  }
 }
 
+function registerCart() {
+
+}
  return (
   <div className="flex flex-col text-center justify-center items-center w-[256px] h-[310px] bg-gray-200 border-none rounded-tr-3xl rounded-bl-3xl">
    <img src={cafeTradicional} alt="" className="max-w-[120px] mt-[-1.5rem]"/>
-   <div className="mt-3 font-bold text-xs bg-yellow-300 py-1 px-2 border-none rounded-full text-yellow-700">
-   <span>TRADICIONAL</span>
+   <div className="flex gap-1">
+   {caracters.map(caracter => {
+    return (
+     <div className="mt-3 font-bold text-xs bg-yellow-300 py-1 px-2 border-none rounded-full text-yellow-700 ">
+      <span>{caracter}</span>
+     </div>
+    )
+   })}
    </div>
    <strong className="pt-4">{title}</strong>
    <span className="pt-2 text-gray-600">{description}</span>
