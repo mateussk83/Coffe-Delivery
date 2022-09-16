@@ -15,6 +15,9 @@ module.exports = {
       '3xl' : '32px'
     },
     colors: {
+    white: 
+      '#FFF'
+    ,
      yellow: {
       700: '#C47F17',
       500: '#DBAC2C',

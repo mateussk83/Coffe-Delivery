@@ -159,7 +159,7 @@ export function Home() {
    <div className="pt-12 grid grid-cols-4 gap-8 gap-y-20 content-center ">
   {Coffes.map(coffeNow => {
     return (
-      <Card description={coffeNow.description} img={coffeNow.img} price={coffeNow.price} title={coffeNow.title} caracters={coffeNow.caracter}/>
+      <Card type="home" description={coffeNow.description} img={coffeNow.img} price={coffeNow.price} title={coffeNow.title} caracters={coffeNow.caracter}/>
     )
   })}
   </div>
