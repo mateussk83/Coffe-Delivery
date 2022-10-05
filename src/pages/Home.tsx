@@ -98,8 +98,8 @@ const Coffes = [{
 ]
 export function Home() {
  return (
-<div className=" px-[8rem]">
-  <div className="flex justify-start items-center pt-[5.875rem] gap-14 mb-[6.75rem] px-6">
+<div className="flex justify-center items-center flex-col">
+  <div className="flex justify-start items-center pt-[5.875rem] gap-14 mb-[6.75rem]">
   <div>
    <div className="w-[588px] flex flex-col gap-4">
   <strong className="font-bold text-5xl">Encontre o café perfeito para qualquer hora do dia</strong>  

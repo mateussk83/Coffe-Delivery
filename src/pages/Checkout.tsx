@@ -3,9 +3,9 @@ import { Card } from "../components/Card";
 
 export function Checkout() {
  return (
-  <form id="checkout" action="">
+  <form id="checkout" action="" className="flex items-center justify-center ">
 
-  <div id="adress" className="flex px-[8rem] pt-10">
+  <div id="adress" className="flex pt-8">
    <div>
 
     <h1 className="font-bold text-lg">Complete seu pedido</h1>
@@ -26,7 +26,7 @@ export function Checkout() {
        <input type="text" className="bg-gray-300 text-gray-600 border  border-gray-400 p-3 rounded-md placeholder:text-gray-600" placeholder="Complemento" />
       </div>
       <div className="flex mt-4 gap-3">
-       <input type="text" className="bg-gray-300 text-gray-800 border  border-gray-400 p-3 rounded-md placeholder:text-gray-600" placeholder="Bairro" />
+       <input type="text" className="bg-gray-300 text-gray-800 border  border-gray-400 p-3  rounded-md placeholder:text-gray-600" placeholder="Bairro" />
        <input type="text" className="bg-gray-300 text-gray-600 border  border-gray-400 p-3 rounded-md placeholder:text-gray-600" placeholder="Cidade" />
        <input type="text" className="bg-gray-300 text-gray-600 border  border-gray-400 p-3 rounded-md placeholder:text-gray-600" placeholder="UF" />
       </div>
@@ -35,7 +35,7 @@ export function Checkout() {
       <div className="flex gap-2 ">
        <CurrencyDollar size={25} color="#5f3dc4" weight="bold" />
        <div className="flex-col flex ">
-        <strong>Pagamento</strong>
+        <strong>Pagamento</strong> 
         <span>O pagamento é feito na entrega. Escolha a forma que deseja pagar</span>
         <div className="flex items-center justify-center gap-3 pt-8">
          <a className="font-normal flex items-center justify-center duration-200  bg-gray-400 text-xs p-4 w-[178px] h-[51px] rounded-md gap-3 hover:bg-gray-500 focus:border-blue-500 focus:border-solid focus:border"><CreditCard size={16} color="#5f3dc4"/>CARTÂO DE CRÉDITO</a>

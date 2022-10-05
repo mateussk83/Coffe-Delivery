@@ -63,7 +63,7 @@ export function Card({ description, img, title, price, caracters, type }: CardPr
 
      :
 
-     <div className="flex bg-gray-300 w-[368px] justify-between border border-b-2 border-gray-400 border-t-0 border-r-0 border-l-0 pb-6">
+     <div className="flex bg-gray-300 w-[320px] justify-between border border-b-2 border-gray-400 border-t-0 border-r-0 border-l-0 pb-6">
 
       <div className="flex ">
       <img className="w-16 h-16" src={cafeTradicional} alt="" />
@@ -72,20 +72,20 @@ export function Card({ description, img, title, price, caracters, type }: CardPr
 
         <span className="ml-5">Expresso Tradicional</span>
 
-        <div className="flex gap-2">
-         <div className="p-2 rounded-md flex justify-center items-center ml-5 mr-2 bg-gray-400">
-         <a onClick={RemoveCountProduct} className="mr-1 "><Minus size={14} color="#5f3dc4" weight="fill" /></a>
+        <div className="flex gap-2 mt-2 ">
+         <div className="p-2 rounded-md flex justify-center items-center ml-5 mr-2 bg-gray-400 ">
+         <a onClick={RemoveCountProduct} className="mr-1"><Minus size={16} color="#5f3dc4" weight="fill" /></a>
          <span>{countProduct}</span>
-         <a onClick={AppendCountProduct} className="ml-1"><Plus size={14} color="#5f3dc4" weight="fill" /></a>
+         <a onClick={AppendCountProduct} className="ml-1"><Plus size={16} color="#5f3dc4" weight="fill" /></a>
          </div>
         <div className="flex">
-        <a href="" className="p-2 flex justify-center items-center rounded-md bg-gray-400"><Trash size={14} color="#5f3dc4" weight="bold" />REMOVER</a>
+        <a href="" className="p-2 flex justify-center items-center rounded-md bg-gray-400 gap-1"><Trash size={16} color="#5f3dc4" weight="bold" />Remover</a>
         </div>
        </div>
        </div>
       </div>
       <div className="">
-      <span>R$9.90</span>
+      <strong>R$9.90</strong>
       </div>
      </div>
    }
