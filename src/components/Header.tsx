@@ -3,7 +3,7 @@ import { MapPin, ShoppingCart } from "phosphor-react"
 import { NavLink } from "react-router-dom"
 export function Header() {
  return (
-  <header className="fixed flex justify-center items-center text-center py-8 gap-[50rem]  w-[100%]">
+  <header className="fixed flex justify-between items-center text-center py-8 w-[100%]">
    <div>
     <Logo/>
    </div>

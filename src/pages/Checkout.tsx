@@ -5,11 +5,11 @@ export function Checkout() {
  return (
   <form id="checkout" action="">
 
-  <div id="adress" className="flex px-[8rem]">
+  <div id="adress" className="flex px-[8rem] pt-10">
    <div>
 
     <h1 className="font-bold text-lg">Complete seu pedido</h1>
-    <div className="flex flex-col pr-8">
+    <div className="flex flex-col pr-8 pt-3">
 
      <div className="flex flex-col p-10 bg-gray-200 rounded-md">
       <div className="flex items-start justify-start gap-2">
@@ -48,7 +48,7 @@ export function Checkout() {
     </div>
    </div>
    <div>
-    <h1 className="font-bold text-lg">Café selecionados</h1>
+    <h1 className="font-bold text-lg pb-3">Café selecionados</h1>
     <div className="bg-gray-300 rounded-tr-3xl rounded-bl-3xl border border-bottom p-10 flex flex-col gap-12">
     <div className="">
     <Card type="buy" description="" img="" price='' title='' caracters={['']} />
